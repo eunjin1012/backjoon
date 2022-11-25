@@ -9,6 +9,11 @@ public class Main{
         int N=(A/100) + ((A%100)/10)*10 + (A%10)*100;
         int S=(B/100) + ((B%100)/10)*10 + (B%10)*100;
         
-        System.out.println(N>S? N : S);
+        if(N>S){
+            System.out.println(N);
+        }
+        else{
+            System.out.println(S);
+        }
     }
 }
