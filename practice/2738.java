@@ -18,7 +18,7 @@ public class Main{
             for(int m=0; m<M; m++){
                 System.out.print(arr[k][m]+" ");
             }
-            System.out.println();
+            System.out.println("");
         }
     }
 }
