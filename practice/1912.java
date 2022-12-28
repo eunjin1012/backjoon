@@ -11,11 +11,12 @@ public class Main{
         }
         arr2[0] = arr[0];
         int MAX = arr[0];
-        for(int i=1; i<n; i++){
-            arr2[i] = Math.max(arr2[i-1]+arr[i], arr[i]);
-            MAX = Math.max(MAX, arr2[i]);
+        for(int j=1; j<n; j++){
+            arr2[j] = Math.max(arr2[j-1]+arr[j], arr[j]);
+            if(MAX<arr2[j]){
+                MAX = arr2[j];
+            }
         }
         System.out.println(MAX);
-        
     }
 }
