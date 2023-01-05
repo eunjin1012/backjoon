@@ -23,7 +23,7 @@ public class Main{
             int x2 = Integer.parseInt(st.nextToken());
             int y2 = Integer.parseInt(st.nextToken());
             for(int i=x1; i<=x2; i++){
-                count=count + (arr[i][y2]-arr[i][y1-1]);
+                count+=arr[i][y2]-arr[i][y1-1];
             }
             sb.append(count+"\n");
         }
